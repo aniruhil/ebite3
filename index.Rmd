@@ -240,10 +240,6 @@ class: inverse, middle, center
 knitr::include_graphics("imgs/oppindex.png")
 ```
 
-```{r}
-countdown::countdown(minutes = 20, left = 0)
-```
-
 ---
 
 class: inverse, middle, center
