@@ -232,7 +232,7 @@ DT::datatable(midf, options = list(
 
 # [School District Data from the Census Bureau](https://data.census.gov/)
 
-```{r, out.width="70%"}
+```{r, out.width="50%"}
 knitr::include_graphics("imgs/datacensusgov.png")
 ```
 
