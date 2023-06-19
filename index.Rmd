@@ -37,6 +37,15 @@ editor_options:
 # xaringan::inf_mr('./presentations/Module01.Rmd') 
 ```
 
+<style>
+div.remark-slide-content {
+  padding: 1em; /*default is 1em 4em*/
+}
+.dataTables_wrapper {
+  font-size: .5em;
+}
+</style>
+
 ```{r jquery, echo=FALSE}
 htmltools::tagList(rmarkdown::html_dependency_jquery())
 ```
@@ -212,12 +221,15 @@ readxl::read_excel(
     "2020-21_School_Grades_Results.xlsx"
     )
   ) %>%
-  slice_head(n = 2) -> midf
+  slice_head(n = 40) -> midf
 
 DT::datatable(midf, options = list(
       scroller = TRUE,
       deferRender = TRUE,
-      scrollY = 400
+      scrollY = 400,
+      scrollX = 400,
+      pageLength = 5, 
+      autoWidth = TRUE
       )
       )
 
