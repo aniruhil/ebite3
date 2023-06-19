@@ -61,7 +61,10 @@ xaringanExtra::use_panelset()
 
 - Comparing like districts  
 
-- The Opportunity Index  
+- School District Data from the Census Bureau
+
+- The Opportunity Index 
+
 ]
 
 
@@ -200,12 +203,12 @@ knitr::include_graphics("imgs/ohio-similar.png")
 
 .panel[.panel-name[Michigan]
 
-```{r, eval=FALSE}
+```{r, eval = TRUE}
 library(tidyverse)
 
 readxl::read_excel(
   here::here(
-    "State Depts of Ed Data/Michigan",
+    "data",
     "2020-21_School_Grades_Results.xlsx"
     )
   ) %>%
@@ -224,6 +227,15 @@ DT::datatable(midf, options = list(
 ]
 
 ]
+
+---
+
+# [School District Data from the Census Bureau](https://data.census.gov/)
+
+```{r, out.width="70%"}
+knitr::include_graphics("imgs/datacensusgov.png")
+```
+
 
 ---
 
