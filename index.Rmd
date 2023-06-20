@@ -242,11 +242,27 @@ DT::datatable(midf, options = list(
 
 ---
 
-# [School District Data from the Census Bureau](https://data.census.gov/)
+# School District Data from the Census Bureau
 
-```{r, out.width="50%"}
+.pull-left[
+
+### [data.census.gov:](https://data.census.gov/)
+
+```{r, out.width="80%"}
 knitr::include_graphics("imgs/datacensusgov.png")
 ```
+
+]
+
+.pull-right[
+
+### [IES NCES EDGE Program:](https://nces.ed.gov/programs/edge/Home)
+
+```{r, out.width="60%"}
+knitr::include_graphics("imgs/iesnces-edge.png")
+```
+
+]
 
 
 ---
